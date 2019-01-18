@@ -1,5 +1,5 @@
 
-package homework;
+package homework.day07;
 
 import java.util.HashMap;
 import java.util.Map;
