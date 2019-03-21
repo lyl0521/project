@@ -43,24 +43,24 @@ public class JDBCtest {
         preparedStatement.setInt(1, 3);
         */
 
-        String sql = "select * from db_test.department";
-        PreparedStatement preparedStatement = connection.prepareStatement(sql);
+    String sql = "select * from department";
+    PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
-        // 4. 执行预编译语句
+    // 4. 执行预编译语句
 //        preparedStatement.executeUpdate(); // Update : insert / update / delete
-        ResultSet resultSet = preparedStatement.executeQuery(); // result set 结果集
+    ResultSet resultSet = preparedStatement.executeQuery(); // result set 结果集
         while (resultSet.next()) {
-            System.out.println(resultSet.getInt("id"));
-            System.out.println(resultSet.getString("title"));
-            System.out.println(resultSet.getString("tel"));
-        }
-        // 5. 释放资源
-        resultSet.close();
-        preparedStatement.close();
-        connection.close();
+                System.out.println(resultSet.getInt("id"));
+                System.out.println(resultSet.getString("title"));
+                System.out.println(resultSet.getString("tel"));
+                }
+                // 5. 释放资源
+                resultSet.close();
+                preparedStatement.close();
+                connection.close();
 
-        System.out.println("done.");
-    }
-}
+                System.out.println("done.");
+                }
+                }
 
 

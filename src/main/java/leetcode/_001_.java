@@ -3,7 +3,7 @@ package leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
-public class _001_Solution {
+public class _001_ {
     public static void main(String[] args) {
         /**
          * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
