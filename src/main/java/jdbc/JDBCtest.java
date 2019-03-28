@@ -1,6 +1,6 @@
 package jdbc;
 
-import com.mysql.jdbc.Driver;
+import com.mysql.cj.jdbc.Driver;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -43,7 +43,7 @@ public class JDBCtest {
         preparedStatement.setInt(1, 3);
         */
 
-    String sql = "select * from department";
+    String sql = "select * from csdn.account";
     PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
     // 4. 执行预编译语句
